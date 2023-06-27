@@ -1,0 +1,25 @@
+                                                                 
+                                                                                
+##############################################                                  
+INFORMATION                                                                     
+##############################################                                  
+                                                                                
+You have loaded the base anaconda environment. For specialized environments,    
+you must first enable them with `source activate [env]`.                        
+                                                                                
+For a full list of environments, type `conda env list`                          
+  
+Traceback (most recent call last):
+  File "train_AMM_ILP.py", line 431, in <module>
+    dataset,inductive=True)
+  File "train_AMM_ILP.py", line 170, in load_data_pretrain
+    from torch_geometric.utils import to_dense_adj, dense_to_sparse, subgraph
+  File "/home/hmathava/.local/lib/python3.7/site-packages/torch_geometric/__init__.py", line 4, in <module>
+    import torch_geometric.data
+  File "/home/hmathava/.local/lib/python3.7/site-packages/torch_geometric/data/__init__.py", line 1, in <module>
+    from .data import Data
+  File "/home/hmathava/.local/lib/python3.7/site-packages/torch_geometric/data/data.py", line 20, in <module>
+    from torch_sparse import SparseTensor
+  File "/home/hmathava/.local/lib/python3.7/site-packages/torch_sparse/__init__.py", line 15, in <module>
+    f'{library}_{suffix}', [osp.dirname(__file__)]).origin)
+AttributeError: 'NoneType' object has no attribute 'origin'
